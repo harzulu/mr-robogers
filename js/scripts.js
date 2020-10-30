@@ -10,6 +10,10 @@ function addBeep(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 1) {
       arr[i] = "beep!";
+    } else if (arr[i] === 2) {
+      arr[i] = "boop!";
+    } else if (arr[i] === 3) {
+      arr[i] = "won't you be my neighbor?";
     }
   }
 
