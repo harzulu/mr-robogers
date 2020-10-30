@@ -8,12 +8,12 @@ function buildArray(number) {
 
 function addBeep(arr) {
   for (let i = 0; i < arr.length; i++) {
-    if ((arr[i] + '').includes('1')) {
-      arr[i] = "beep!";
+    if ((arr[i] + '').includes('3')) {
+      arr[i] = "won't you be my neighbor?";
     } else if ((arr[i] + '').includes('2')) {
       arr[i] = "boop!";
-    } else if ((arr[i] + '').includes('3')) {
-      arr[i] = "won't you be my neighbor?";
+    } else if ((arr[i] + '').includes('1')) {
+      arr[i] = "beep!";
     }
   }
   return arr;
