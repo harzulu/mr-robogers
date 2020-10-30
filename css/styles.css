@@ -2,6 +2,7 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .inputNumber {
@@ -19,7 +20,7 @@ h1 {
 
 .images {
   display: none;
-  height: 500px;
+  height: 600px;
   margin-bottom: 20px;
   border-bottom: 2px solid black;
 }
