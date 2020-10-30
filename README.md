@@ -53,7 +53,7 @@ Test: "It should change the number 3 to "won't you be my neighbor?""
 Expect(makeArray(10).toEqual[0,"beep!","boop!","won't you be my neighbor?",4,5,6,7,8,9,10]);
 
 Describe: allBeeps()
-Test: "It should change all numbers with the number 1 to "beep!""
+Test: "It should change all numbers with the numbers 1,2 and 3 to the strings"
 Expect(makeArray(10).toEqual[0,"beep!","boop!","won't you be my neighbor?",4,5,6,7,8,9,"beep!"]);
 
 ## Technology Used

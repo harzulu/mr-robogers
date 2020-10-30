@@ -2,3 +2,14 @@ body {
   margin-left: 25%;
   margin-right: 25%;
 }
+
+.outputNumber {
+  display: none;
+}
+
+img {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding-right: 25px;
+}

@@ -25,7 +25,8 @@ $(document).ready(function() {
     let number = parseInt($("#numberInput").val());
     let finishedArr = buildArray(number);
     finishedArr.forEach(function(element) {
-      $("#result").append("<li>" + element + "</li>");
+      $("#result").append(element + ", ");
     });
+    $(".outputNumber").fadeIn();
   });
 });
