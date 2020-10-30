@@ -3,10 +3,10 @@ function buildArray(number) {
   for (let i = 0; i <= number; i++) {
     arr.push(i);
   }
-  return addBeep(arr);
+  return addText(arr);
 }
 
-function addBeep(arr) {
+function addText(arr) {
   for (let i = 0; i < arr.length; i++) {
     if ((arr[i] + '').includes('3')) {
       arr[i] = "won't you be my neighbor?";
@@ -23,6 +23,9 @@ $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
     let number = parseInt($("#numberInput").val());
-    console.log(buildArray(number));
+    let finishedArr = buildArray(number);
+    finishedArr.forEach(function(element) {
+      $("#result").append("<li>" + element + "</li>");
+    });
   });
 });
