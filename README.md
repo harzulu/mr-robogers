@@ -34,6 +34,28 @@ There are no known bugs or issues.
 Contact me at:
 benrmcfarland@gmail.com
 
+## Tests
+
+Describe: makeArray()
+Test: "It should make an array 0 to the inputed number"
+Expect(makeArray(10).toEqual[0,1,2,3,4,5,6,7,8,9,10]);
+
+Describe: giveBeeps()
+Test: "It should change the number 1 to "beep!""
+Expect(makeArray(10).toEqual[0,"beep!",2,3,4,5,6,7,8,9,10]);
+
+Describe: giveBoops()
+Test: "It should change the number 2 to "boop!""
+Expect(makeArray(10).toEqual[0,"beep!","boop!",3,4,5,6,7,8,9,10]);
+
+Describe: giveNeighbors()
+Test: "It should change the number 3 to "won't you be my neighbor?""
+Expect(makeArray(10).toEqual[0,"beep!","boop!","won't you be my neighbor?",4,5,6,7,8,9,10]);
+
+Describe: allBeeps()
+Test: "It should change all numbers with the number 1 to "beep!""
+Expect(makeArray(10).toEqual[0,"beep!","boop!","won't you be my neighbor?",4,5,6,7,8,9,"beep!"]);
+
 ## Technology Used
 
 * Microsoft Visual Studio Code
