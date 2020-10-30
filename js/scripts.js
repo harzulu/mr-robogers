@@ -1,14 +1,14 @@
 function setPicture(input) {
   if (input === 1) {
-    $("#title").append('<img src="/../img/mr-rogers2" alt="mr rogers sitting">');
+    $("#title").append('<img src="img/mr-rogers2.jpg" alt="mr rogers sitting">');
   } else if (input === 2) {
-    $("#title").append('<img src="/../img/mr-rogers1" alt="mr rogers sitting">');
+    $("#title").append('<img src="img/mr-rogers1.jpg" alt="mr rogers sitting">');
   } else if (input === 3) {
-    $("#title").append('<img src="/../img/mr-rogers4" alt="mr rogers sitting">');
+    $("#title").append('<img src="img/mr-rogers4.jpg" alt="mr rogers sitting">');
   } else if (input === 4) {
-    $("#title").append('<img src="/../img/mr-rogers3" alt="mr rogers sitting">');
+    $("#title").append('<img src="img/mr-rogers3.jpg" alt="mr rogers sitting">');
   } else if (input === 5) {
-    $("#title").append('<img src="/../img/mr-rogers5" alt="mr rogers sitting">');
+    $("#title").append('<img src="img/mr-rogers5.jpg" alt="mr rogers sitting">');
   }
 }
 
@@ -42,10 +42,10 @@ $(document).ready(function() {
     document.body.style.background = backColor;
     setPicture(favSeason);
     $("#intro").fadeOut();
-    $("#inputNumber").fadeIn();
+    $("form#inputNumber").fadeIn();
   });
-  $("form#inputNumber").submit(function(event) {
-    event.preventDefault();
+  $("form#inputNumber").submit(function(e) {
+    e.preventDefault();
     let number = parseInt($("#numberInput").val());
     let finishedArr = buildArray(number);
     finishedArr.forEach(function(element) {
