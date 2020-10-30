@@ -16,7 +16,6 @@ function addBeep(arr) {
       arr[i] = "won't you be my neighbor?";
     }
   }
-
   return arr;
 }
 
