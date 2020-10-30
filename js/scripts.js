@@ -17,18 +17,18 @@ function setPicture(input) {
   }
 }
 
-function buildArray(number) {
+function buildArray(number, name) {
   let arr = [];
   for (let i = 0; i <= number; i++) {
     arr.push(i);
   }
-  return addText(arr);
+  return addText(arr, name);
 }
 
-function addText(arr) {
+function addText(arr, name) {
   for (let i = 0; i < arr.length; i++) {
     if ((arr[i] + '').includes('3')) {
-      arr[i] = ("won't you be my neighbor?");
+      arr[i] = ("won't you be my neighbor " + name + "?");
     } else if ((arr[i] + '').includes('2')) {
       arr[i] = "boop!";
     } else if ((arr[i] + '').includes('1')) {
@@ -39,9 +39,10 @@ function addText(arr) {
 }
 
 $(document).ready(function() {
+  let name;
   $(".intro").submit(function(event) {
     event.preventDefault();
-    let name = $("#name").val();
+    name = $("#name").val();
     const favSeason = parseInt($("input:radio[name=season]:checked").val());
     setPicture(favSeason);
     $(".intro").fadeOut();
@@ -51,7 +52,7 @@ $(document).ready(function() {
   $(".inputNumber").submit(function(e) {
     e.preventDefault();
     let number = parseInt($("#numberInput").val());
-    let finishedArr = buildArray(number);
+    let finishedArr = buildArray(number, name);
     finishedArr.forEach(function(element) {
       $("#result").append(element + ", ");
     });
