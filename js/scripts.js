@@ -38,6 +38,23 @@ function addText(arr, name) {
   return arr;
 }
 
+function countBeeps(arr) {
+  let beeps = 0;
+  let boops = 0;
+  let neighbors = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "beep!") {
+      beeps++;
+    } else if (arr[i] === "boop!") {
+      boops++;
+    } else if (!Number.isInteger(arr[i])) {
+      neighbors++;
+    }
+  }
+  let finalArr = [beeps, boops, neighbors];
+  return finalArr;
+}
+
 $(document).ready(function() {
   let name;
   $(".intro").submit(function(event) {
@@ -56,6 +73,10 @@ $(document).ready(function() {
     finishedArr.forEach(function(element) {
       $("#result").append(element + ", ");
     });
+    let counterArr = countBeeps(finishedArr);
+    $("#resultBoops").append("<li>There are " + counterArr[0] + " many beeps.</li>");
+    $("#resultBoops").append("<li>There are " + counterArr[1] + " many boops.</li>");
+    $("#resultBoops").append("<li>And Mr.Robogers asked you to be his neighbor " + counterArr[2] + " times.</li>");
     $("#inputNumber").fadeOut();
     $(".outputNumber").fadeIn();
     $(".restart").submit(function(event) {
