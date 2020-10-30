@@ -46,8 +46,9 @@ $(document).ready(function() {
     const favSeason = parseInt($("input:radio[name=season]:checked").val());
     document.body.style.background = backColor;
     setPicture(favSeason);
-    $(".intro").hide();
-    $(".inputNumber").show();
+    $(".intro").fadeOut();
+    $(".images").fadeIn();
+    $(".inputNumber").fadeIn();
   });
   $(".inputNumber").submit(function(e) {
     e.preventDefault();
