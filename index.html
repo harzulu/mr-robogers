@@ -7,9 +7,21 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Mr. Roboger's Neighborhood</title>
   </head>
   <body>
-
+    <div class="container">
+      <form id="inputNumber">
+        <div class="form-group">
+          <label for="numberInput">What number would you like to count to?</label>
+          <input id="numberInput" class="form-control" type="number" required>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <div class="outputNumber">
+        <ul id="result">
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
