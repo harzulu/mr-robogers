@@ -13,7 +13,7 @@ function setPicture(input) {
     $(".images").append('<img class="image" src="img/spring-robot.webp" alt="mr rogers sitting">');
   } else if (input === 5) {
     $(".images").append('<img class="image" src="img/mr-rogers5.jpg" alt="mr rogers sitting">');
-    $(".images").append('<img class="image" src="img/bender-robot.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/wall-e.jpg" alt="mr rogers sitting">');
   }
 }
 
