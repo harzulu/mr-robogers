@@ -3,22 +3,33 @@ body {
   margin-right: 20%;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("../img/neighborhood.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.intro {
+  background-color: rgba(255, 255, 255, 0.788);
 }
 
 .inputNumber {
- display: none;
+  background-color: rgba(255, 255, 255, 0.788);
+  display: none;
 }
 
 .outputNumber {
+  background-color: rgba(255, 255, 255, 0.788);
   display: none;
 }
 
 h1 {
+  background-color: rgba(255, 255, 255, 0.788);
   margin-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
 .images {
+  background-color: rgba(255, 255, 255, 0.788);
   display: none;
   height: 600px;
   margin-bottom: 20px;

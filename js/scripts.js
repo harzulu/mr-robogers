@@ -42,9 +42,7 @@ $(document).ready(function() {
   $(".intro").submit(function(event) {
     event.preventDefault();
     let name = $("#name").val();
-    const backColor = $("#color").val();
     const favSeason = parseInt($("input:radio[name=season]:checked").val());
-    document.body.style.background = backColor;
     setPicture(favSeason);
     $(".intro").fadeOut();
     $(".images").fadeIn();
