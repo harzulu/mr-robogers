@@ -11,13 +11,44 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Mr.Roboger's Neighborhood!</h1>
+      <h1 id="title">Welcome to Mr.Roboger's Neighborhood!</h1>
       <form id="intro">
         <label for="name">What is your name, friend?</label>
         <input id="name" class="form-control">
         <label for="color">What is your favorite color?</label>
         <input id="color" class="form-control" type="color">
-        
+        <div class="question" id="question-one">
+          <label for="name">What is your favorite season?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="season" value="1" checked>
+              Summer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="season" value="2">
+              Fall
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="season" value="3">
+              Winter
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="season" value="4">
+              Spring
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="season" value="5">
+              Any!
+            </label>
+          </div>
         <button type="submit" class="btn btn-success">Begin!</button>
       </form>
       <form id="inputNumber">

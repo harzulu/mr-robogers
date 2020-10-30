@@ -1,3 +1,17 @@
+function setPicture(input) {
+  if (input === 1) {
+    $("#title").append('<img src="/../img/mr-rogers2" alt="mr rogers sitting">');
+  } else if (input === 2) {
+    $("#title").append('<img src="/../img/mr-rogers1" alt="mr rogers sitting">');
+  } else if (input === 3) {
+    $("#title").append('<img src="/../img/mr-rogers4" alt="mr rogers sitting">');
+  } else if (input === 4) {
+    $("#title").append('<img src="/../img/mr-rogers3" alt="mr rogers sitting">');
+  } else if (input === 5) {
+    $("#title").append('<img src="/../img/mr-rogers5" alt="mr rogers sitting">');
+  }
+}
+
 function buildArray(number) {
   let arr = [];
   for (let i = 0; i <= number; i++) {
@@ -24,7 +38,9 @@ $(document).ready(function() {
     event.preventDefault();
     let name = $("#name").val();
     const backColor = $("#color").val();
+    const favSeason = parseInt($("input:radio[name=season]:checked").val());
     document.body.style.background = backColor;
+    setPicture(favSeason);
     $("#intro").fadeOut();
     $("#inputNumber").fadeIn();
   });
