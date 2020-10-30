@@ -9,15 +9,18 @@ body {
 }
 
 .intro {
+  border: 2px solid black;
   background-color: rgba(255, 255, 255, 0.788);
 }
 
 .inputNumber {
+  border: 2px solid black;
   background-color: rgba(255, 255, 255, 0.788);
   display: none;
 }
 
 .outputNumber {
+  border: 2px solid black;
   background-color: rgba(255, 255, 255, 0.788);
   display: none;
 }
@@ -29,6 +32,7 @@ h1 {
 }
 
 .images {
+  border: 2px solid black;
   background-color: rgba(255, 255, 255, 0.788);
   display: none;
   height: 600px;
