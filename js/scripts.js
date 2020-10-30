@@ -1,14 +1,19 @@
 function setPicture(input) {
   if (input === 1) {
-    $("#title").append('<img src="img/mr-rogers2.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/mr-rogers2.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/summer-robot.jpg" alt="mr rogers sitting">');
   } else if (input === 2) {
-    $("#title").append('<img src="img/mr-rogers1.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/mr-rogers1.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/fall-robot.jpg" alt="mr rogers sitting">');
   } else if (input === 3) {
-    $("#title").append('<img src="img/mr-rogers4.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/mr-rogers4.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/winter-robot.png" alt="mr rogers sitting">');
   } else if (input === 4) {
-    $("#title").append('<img src="img/mr-rogers3.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/mr-rogers3.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/spring-robot.webp" alt="mr rogers sitting">');
   } else if (input === 5) {
-    $("#title").append('<img src="img/mr-rogers5.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/mr-rogers5.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/bender-robot.jpg" alt="mr rogers sitting">');
   }
 }
 
@@ -34,17 +39,17 @@ function addText(arr) {
 }
 
 $(document).ready(function() {
-  $("#intro").submit(function(event) {
+  $(".intro").submit(function(event) {
     event.preventDefault();
     let name = $("#name").val();
     const backColor = $("#color").val();
     const favSeason = parseInt($("input:radio[name=season]:checked").val());
     document.body.style.background = backColor;
     setPicture(favSeason);
-    $("#intro").fadeOut();
-    $("form#inputNumber").fadeIn();
+    $(".intro").hide();
+    $(".inputNumber").show();
   });
-  $("form#inputNumber").submit(function(e) {
+  $(".inputNumber").submit(function(e) {
     e.preventDefault();
     let number = parseInt($("#numberInput").val());
     let finishedArr = buildArray(number);
