@@ -1,22 +1,4 @@
-function setPicture(input) {
-  if (input === 1) {
-    $(".images").append('<img class="image" src="img/mr-rogers2.jpg" alt="mr rogers sitting">');
-    $(".images").append('<img class="image" src="img/summer-robot.jpg" alt="mr rogers sitting">');
-  } else if (input === 2) {
-    $(".images").append('<img class="image" src="img/mr-rogers1.jpg" alt="mr rogers sitting">');
-    $(".images").append('<img class="image" src="img/fall-robot.jpg" alt="mr rogers sitting">');
-  } else if (input === 3) {
-    $(".images").append('<img class="image" src="img/mr-rogers4.jpg" alt="mr rogers sitting">');
-    $(".images").append('<img class="image" src="img/winter-robot.png" alt="mr rogers sitting">');
-  } else if (input === 4) {
-    $(".images").append('<img class="image" src="img/mr-rogers3.jpg" alt="mr rogers sitting">');
-    $(".images").append('<img class="image" src="img/spring-robot.webp" alt="mr rogers sitting">');
-  } else if (input === 5) {
-    $(".images").append('<img class="image" src="img/mr-rogers5.jpg" alt="mr rogers sitting">');
-    $(".images").append('<img class="image" src="img/wall-e.jpg" alt="mr rogers sitting">');
-  }
-}
-
+// Business Logic
 function buildArray(number, name) {
   let arr = [];
   for (let i = 0; i <= number; i++) {
@@ -54,7 +36,25 @@ function countBeeps(arr) {
   let finalArr = [beeps, boops, neighbors];
   return finalArr;
 }
-
+// UI Logic
+function setPicture(input) {
+  if (input === 1) {
+    $(".images").append('<img class="image" src="img/mr-rogers2.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/summer-robot.jpg" alt="mr rogers sitting">');
+  } else if (input === 2) {
+    $(".images").append('<img class="image" src="img/mr-rogers1.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/fall-robot.jpg" alt="mr rogers sitting">');
+  } else if (input === 3) {
+    $(".images").append('<img class="image" src="img/mr-rogers4.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/winter-robot.png" alt="mr rogers sitting">');
+  } else if (input === 4) {
+    $(".images").append('<img class="image" src="img/mr-rogers3.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/spring-robot.webp" alt="mr rogers sitting">');
+  } else if (input === 5) {
+    $(".images").append('<img class="image" src="img/mr-rogers5.jpg" alt="mr rogers sitting">');
+    $(".images").append('<img class="image" src="img/wall-e.jpg" alt="mr rogers sitting">');
+  }
+}
 $(document).ready(function() {
   let name;
   $(".intro").submit(function(event) {
